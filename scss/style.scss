@@ -1,0 +1,278 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+$font-family: 'Oswald', sans-serif;
+$color1: #F4F8EF ;
+@mixin boton {
+	background-color: #ffa499;
+	border-radius: 6px;
+	box-shadow: 0 7px 8px 0 #0a0a0a;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #0a0a0a;
+}
+
+@mixin boton-hover {
+	transform: scale(0.9);
+	text-decoration: none;
+	box-shadow: 0 7px 8px 0 #0a0a0a;
+	color: black;
+}
+
+@mixin hover-menu {
+	background: transparent;
+	color: #F4F8EF;
+	font-weight: bold;
+  	transform: scale(0.8);
+}
+
+body{
+	font-family: $font-family;
+	padding: 10px;
+	margin: 3px;
+	background-color: #1b1b1b ;
+	color: $color1;
+	letter-spacing: .05rem;
+		h1 {
+			font-size: 40px;
+			padding: 20px;
+		}
+		p {
+			font-size: 20px;
+		}
+		a{
+			color: #F4F8EF;
+		}
+}
+
+#menu {
+	.navbar-brand{
+	color: $color1;
+		&:hover {
+			text-decoration: none;
+			color: $color1;
+		}
+	}
+	.navbar-toggler-icon {
+	color:$color1;
+		&:hover {
+			text-decoration: none;
+			color: $color1;
+		}
+	}
+	#navbarNavAltMarkup {
+	list-style:none;
+	color: $color1;
+		a:hover {
+			@include hover-menu;
+		}
+	}
+}
+
+.sideways{
+	margin-bottom: 30px;
+	list-style: none;
+	writing-mode: vertical-lr;
+	display: block;
+	margin: 30px 0;
+	transform: rotate(-180deg);
+}
+
+#bienvenidos {
+		h1 {
+			text-align: center;
+			font-size: 30px;
+			padding: 20px;
+		}
+		p {
+			text-align: center;
+			font-size: 18px;
+			padding: 10px;
+		}
+	.boton {
+		padding: 10px;
+		text-align: right;
+		a {
+			@include boton;
+				&:hover {
+					@include boton-hover;
+				}
+		}
+	}
+}
+
+#galeria {
+	.row {
+		div{
+			padding: 25px;
+			margin: 0;
+				img {
+					width: 100%;
+				}
+		}
+		.card {
+			width:100%;
+			height: 100%;
+			background-color: #1b1c19;
+		  	box-shadow: 0 7px 8px 0 black;
+		  		&:hover {
+		  			transform: scale(1.1);
+		  			color: #F4F8EF;
+		  		}
+		  	p {
+		  		font-size: 13px;
+		  		text-align: center;
+		  	}
+		  	h2{
+		  		margin-top: 6px;
+		  		font-size: 20px;
+		  		text-align: center;
+		  		background-color: #000000;
+		  	}
+		}
+	}
+}
+
+form {
+	input:hover {
+		font-size: 20px;
+	}
+	textarea:hover {
+		font-size: 20px;
+	}
+	button{
+		&:hover {
+			@include hover-menu;
+		}
+	}
+}
+
+.list-group li{
+	background-color: #141414;
+	font-size: 18px
+}
+
+.parrafosomos {
+	font-size: 21px;
+	white-space: pre-line;
+	text-align: center;
+	line-height:20px;
+	margin-right: 60px;
+}
+
+.botonsomos {
+	padding: 10px;
+	text-align: left;
+		a {
+			@include boton;
+				&:hover {
+					@include boton-hover;
+				}
+		}
+}
+
+footer {
+	div{
+		a{
+			text-decoration: none;
+			font-size: 15px;
+			color: $color1;
+			&:hover{
+				text-decoration: none;
+				background: transparent;
+				color: $color1;
+			}
+		}
+	}
+}
+
+@media (max-width: 1366px) {
+	h1 {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 1024px) {
+	#bienvenidos {
+		h1 {
+			font-size: 18px;
+		}
+		p {
+			font-size: 12px;
+		}
+		.boton {
+			padding: 1px;
+				a{
+					font-size: 15px;
+				}
+			}
+		}
+	.sideways {
+		font-size: 17px;
+		img {
+			width: 15px;
+			height: 15px;
+		}
+	}
+	.parrafosomos {
+		font-size: 16px;
+		line-height:15px;
+	}
+	.boton {
+		padding: 3px;
+		a {
+			font-size: 15px; 
+		}
+	}
+}
+
+@media (max-width: 414px) {
+	#bienvenidos {
+		h1 {
+			font-size: 9px;
+			padding: 1px;
+		}
+		.boton {
+			a {
+				padding: 0px;
+				font-size: 3px; 
+			}
+		}	
+	}
+	.sideways {
+		font-size: 7px;
+		img {
+			width: 10px;
+			height: 10px;
+		}
+	}
+}
+
+@media (min-width: 415px) and (max-width: 736px) {
+	#bienvenidos {
+		.boton {
+			a {
+				padding: 0;
+				font-size: 12px;
+			}
+		}
+	}
+}

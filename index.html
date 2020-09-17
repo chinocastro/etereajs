@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EtereabyChino</title>
+	<meta charset="utf-8">
+	<meta name= "description" content="Marca de Ropa">
+	<meta name= "keywords" content="ropa,EtereabyChino">
+	<meta name= "author" content="Federico Castro">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minium-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+
+	<script>
+
+		function sumar() {
+		var nombre
+		var edad  
+		var nombre= prompt ("Hola ¿como te llamas?:");
+		
+
+		alert ("Hola " + nombre);
+
+		var edad= prompt (nombre + " ¿Cuantos años tenes?: ");
+
+		alert ("Entonces tu nombre es " + nombre + " y tenes " + edad + " años ")
+			if (nombre && nombre.trim()){
+			var confirmar = confirm ("estos datos son correctos?")
+				if (confirmar) {
+				alert ("Bienvenid@ entonces");
+			}else {
+					alert ("Empecemos de nuevo") 
+					if(prompt("¿Como te llamas?"));
+					alert ("Hola " + nombre);
+			}	
+		}
+
+		}
+	</script>
+
+</head>
+<body>
+	<div class="container">
+		<header>
+			<!-- inicio menu -->
+			<nav class="navbar navbar-expand-lg" id="menu">
+				<!--logo-->
+				<a class="navbar-brand" href="index.html">Eterea by Chino</a>
+				<!--cierre logo-->
+			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> 
+			  		<span class="navbar-toggler-icon"> Menu</span>
+			  	</button>
+			  	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				    <div class="navbar-nav nav-tabs ml-auto">
+						<a class="nav-item nav-link" href="productos.html">Productos</span></a>
+						<a class="nav-item nav-link" href="somos.html">Somos</a>
+						<a class="nav-item nav-link" href="campanas.html">Campañas</a>
+						<a class="nav-item nav-link" href="contacto.html">Contacto</a>
+				    </div>
+			  	</div>
+			</nav>
+			<!-- cierre menu-->
+		</header>
+	</div>
+
+	<main class="container-fluid">
+		<div class="row">
+			<div class="col-1 col-sm-1 col-md-1 align-self-center border-right d-none d-md-block">
+				<ul class="list-instyled">
+					<li class="sideways"><a href="https://www.instagram.com/ETEREABYCHINO"><img src="img/insta.png" alt="logo instagram"></a></li>
+					<li class="sideways">Encontranos en </li>
+				</ul>
+			</div>
+			<div id="bienvenidos" class="col-xs-12 col-sm-2 col-md-2 align-self-center">
+					<h1 style="font-weight: bold"> Somos Eterea!</h1>
+					<p class="d-none d-lg-block ">delicados y ligeros, algo fuera de este mundo.</p>
+					<div class="boton">
+						<a class="btn" href="productos.html" role="button"> + Coleccion </a>
+					</div>
+					<button class="queremos" onclick="sumar()"> <strong> Queremos conocerte ! </strong></button>
+					
+			</div>
+			<div class=" col-xs-12 col-sm-9 col-md-9 align-self-center">
+				<img class="img-fluid" src="img/portadaeterea.png" alt="baner etereabychino">
+			</div>
+		</div>
+	</main>
+
+	<hr>
+
+	<footer class="container text-right">
+		<div class="row">
+			<div class="col-md-12">
+				© 2020 etereabychino <a href="https://www.instagram.com/ETEREABYCHINO"> Redes Sociales </a><a href="contacto.html"> Contacto</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>

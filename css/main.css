@@ -1,0 +1,215 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  font-family: "Oswald", sans-serif;
+  padding: 10px;
+  margin: 3px;
+  background-color: #1b1b1b;
+  color: #F4F8EF;
+  letter-spacing: .05rem; }
+  body h1 {
+    font-size: 40px;
+    padding: 20px; }
+  body p {
+    font-size: 20px; }
+  body a {
+    color: #F4F8EF; }
+
+#menu .navbar-brand {
+  color: #F4F8EF; }
+  #menu .navbar-brand:hover {
+    text-decoration: none;
+    color: #F4F8EF; }
+
+#menu .navbar-toggler-icon {
+  color: #F4F8EF; }
+  #menu .navbar-toggler-icon:hover {
+    text-decoration: none;
+    color: #F4F8EF; }
+
+#menu #navbarNavAltMarkup {
+  list-style: none;
+  color: #F4F8EF; }
+  #menu #navbarNavAltMarkup a:hover {
+    background: transparent;
+    color: #F4F8EF;
+    font-weight: bold;
+    transform: scale(0.8); }
+
+.sideways {
+  margin-bottom: 30px;
+  list-style: none;
+  writing-mode: vertical-lr;
+  display: block;
+  margin: 30px 0;
+  transform: rotate(-180deg); }
+
+#bienvenidos h1 {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px; }
+
+#bienvenidos p {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px; }
+
+#bienvenidos .boton {
+  padding: 10px;
+  text-align: right; }
+  #bienvenidos .boton a {
+    background-color: #ffa499;
+    border-radius: 6px;
+    box-shadow: 0 7px 8px 0 #0a0a0a;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0a0a0a; }
+    #bienvenidos .boton a:hover {
+      transform: scale(0.9);
+      text-decoration: none;
+      box-shadow: 0 7px 8px 0 #0a0a0a;
+      color: black; }
+.queremos {
+    margin-top: 80px;
+    margin-left: 80px;
+    background-color: #ffa499;
+    border-radius: 6px;
+    box-shadow: 0 7px 8px 0 #0a0a0a;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0a0a0a; }
+}
+#galeria .row div {
+  padding: 25px;
+  margin: 0; }
+  #galeria .row div img {
+    width: 100%; }
+
+#galeria .row .card {
+  width: 100%;
+  height: 100%;
+  background-color: #1b1c19;
+  box-shadow: 0 7px 8px 0 black; }
+  #galeria .row .card:hover {
+    transform: scale(1.1);
+    color: #F4F8EF; }
+  #galeria .row .card p {
+    font-size: 13px;
+    text-align: center; }
+  #galeria .row .card h2 {
+    margin-top: 6px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #000000; }
+
+form input:hover {
+  font-size: 20px; }
+
+form textarea:hover {
+  font-size: 20px; }
+
+form button:hover {
+  background: transparent;
+  color: #F4F8EF;
+  font-weight: bold;
+  transform: scale(0.8); }
+
+.list-group li {
+  background-color: #141414;
+  font-size: 18px; }
+
+.parrafosomos {
+  font-size: 21px;
+  white-space: pre-line;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 60px; }
+
+.botonsomos {
+  padding: 10px;
+  text-align: left; }
+  .botonsomos a {
+    background-color: #ffa499;
+    border-radius: 6px;
+    box-shadow: 0 7px 8px 0 #0a0a0a;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0a0a0a; }
+    .botonsomos a:hover {
+      transform: scale(0.9);
+      text-decoration: none;
+      box-shadow: 0 7px 8px 0 #0a0a0a;
+      color: black; }
+
+footer div a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #F4F8EF; }
+  footer div a:hover {
+    text-decoration: none;
+    background: transparent;
+    color: #F4F8EF; }
+
+@media (max-width: 1366px) {
+  h1 {
+    font-size: 18px; } }
+
+@media (max-width: 1024px) {
+  #bienvenidos h1 {
+    font-size: 18px; }
+  #bienvenidos p {
+    font-size: 12px; }
+  #bienvenidos .boton {
+    padding: 1px; }
+    #bienvenidos .boton a {
+      font-size: 15px; }
+  .sideways {
+    font-size: 17px; }
+    .sideways img {
+      width: 15px;
+      height: 15px; }
+  .parrafosomos {
+    font-size: 16px;
+    line-height: 15px; }
+  .boton {
+    padding: 3px; }
+    .boton a {
+      font-size: 15px; } }
+
+@media (max-width: 414px) {
+  #bienvenidos h1 {
+    font-size: 9px;
+    padding: 1px; }
+  #bienvenidos .boton a {
+    padding: 0px;
+    font-size: 3px; }
+  .sideways {
+    font-size: 7px; }
+    .sideways img {
+      width: 10px;
+      height: 10px; } }
+
+@media (min-width: 415px) and (max-width: 736px) {
+  #bienvenidos .boton a {
+    padding: 0;
+    font-size: 12px; } }

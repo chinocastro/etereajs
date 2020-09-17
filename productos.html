@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Productos</title>
+	<meta charset="utf-8">
+	<meta name= "descrition" content="Marca de Ropa">
+	<meta name= "keywords" content="ropa, productos, gorras, EtereabyChino">
+	<meta name= "author" content="Federico Castro">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minium-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+
+	<script>
+	function Producto(n, p, i,) {
+	    this.nombre = n;
+	    this.precio = p;
+	    this.imagen = i;
+		}
+
+		gorraEfimera = new Producto('gorraEfimera', 450, "img/gorra1.jpg")
+		gorraAurora = new Producto('gorraAurora', 450, "img/gorra2.jpg")
+		gorraEpifania = new Producto('gorraEpifania', 500, "img/gorra3.jpg")
+		gorraEtereo = new Producto('gorraEtereo', 350, "img/gorra4.jpg")
+
+	</script>
+
+</head>
+<body>
+	<div class="container">
+		<header>
+			<!-- inicio menu -->
+			<nav class="navbar navbar-expand-lg" id="menu">
+				<!--logo-->
+				<a class="navbar-brand" href="index.html">Eterea by Chino</a>
+				<!--cierre logo-->
+			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon">Menu</span>
+			  	</button>
+			  	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				    <div class="navbar-nav nav-tabs ml-auto">
+						<a class="nav-item nav-link active" href="productos.html">Productos</span></a>
+						<a class="nav-item nav-link" href="somos.html">Somos</a>
+						<a class="nav-item nav-link" href="campanas.html">Campañas</a>
+						<a class="nav-item nav-link" href="contacto.html">Contacto</a>
+				    </div>
+			  	</div>
+			</nav>
+			<!-- cierre menu-->
+		</header>
+	</div>
+
+	<main class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-center"> #PRODUCTOS </h1>
+			</div>
+		</div>
+		<section id="galeria" class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="card">
+						<img src="img/gorra1.jpg" alt="Gorra Efimera">
+						<h2>Efimera</h2>
+						<p>poco tiempo para este mundo</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="card">
+						<img src="img/gorra2.jpg" alt="Gorra Aurora">
+						<h2>Aurora</h2>
+						<p>luz tenue para este mundo</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="card">
+						<img src="img/gorra3.jpg" alt="Gorra Epifania">
+						<h2>Epifania</h2>
+						<p>revelacion para este mundo</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="card">
+						<img src="img/gorra4.jpg" alt="Gorra Etereo">
+						<h2>Etereo</h2>
+						<p>delicada para este mundo</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="galeria" class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="card">
+						<img src="img/gorra5.jpg" alt="Gorra Petricor">
+						<h2>Petricor</h2>
+						<p>el olor a lluvia de este mundo</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="card">
+						<img src="img/gorra6.jpg" alt="Gorra Monda">
+						<h2>Monda</h2>
+						<p>libre de cosas de este mundo</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="card">
+						<img src="img/gorra7.jpg" alt="Gorra Acedrada">
+						<h2>Acedrada</h2>
+						<p>lo puro de este mundo</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="card">
+						<img src="img/gorra8.jpg" alt="Gorra Camino">
+						<h2>Camino</h2>
+						<p>la ruta de este mundo</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<hr>
+
+	<footer class="container text-right">
+		<div class="row">
+			<div class="col-md-12">
+				© 2020 etereabychino <a href="https://www.instagram.com/ETEREABYCHINO"> Redes Sociales </a><a href="contacto.html"> Contacto</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
