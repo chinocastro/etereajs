@@ -8,38 +8,10 @@
 	<meta name= "author" content="Federico Castro">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minium-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	
+	<script type="text/javascript" language="javascript" src="js/js.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
-
-	<script>
-
-		function sumar() {
-		var nombre
-		var edad  
-		var nombre= prompt ("Hola ¿como te llamas?:");
-		
-
-		alert ("Hola " + nombre);
-
-		var edad= prompt (nombre + " ¿Cuantos años tenes?: ");
-
-		alert ("Entonces tu nombre es " + nombre + " y tenes " + edad + " años ")
-			if (nombre && nombre.trim()){
-			var confirmar = confirm ("estos datos son correctos?")
-				if (confirmar) {
-				alert ("Bienvenid@ entonces");
-			}else {
-					alert ("Empecemos de nuevo") 
-					if(prompt("¿Como te llamas?"));
-					alert ("Hola " + nombre);
-			}	
-		}
-
-		}
-	</script>
-
 </head>
 <body>
 	<div class="container">
@@ -74,12 +46,12 @@
 				</ul>
 			</div>
 			<div id="bienvenidos" class="col-xs-12 col-sm-2 col-md-2 align-self-center">
-					<h1 style="font-weight: bold"> Somos Eterea!</h1>
+					<h1 id="titulo" style="font-weight: bold"> Somos Eterea!</h1>
 					<p class="d-none d-lg-block ">delicados y ligeros, algo fuera de este mundo.</p>
 					<div class="boton">
 						<a class="btn" href="productos.html" role="button"> + Coleccion </a>
 					</div>
-					<button class="queremos" onclick="sumar()"> <strong> Queremos conocerte ! </strong></button>
+					<button class="queremos" onclick= "sumar()"> <strong> Queremos conocerte ! </strong> </button>
 					
 			</div>
 			<div class=" col-xs-12 col-sm-9 col-md-9 align-self-center">

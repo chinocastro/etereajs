@@ -8,11 +8,22 @@
 	<meta name= "author" content="Federico Castro">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minium-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	
+	<script type="text/javascript" language="javascript" src="js/js.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="body">
+
+	<div class="selector">
+		<h2>elegi tu color</h2>
+		<select name="fondo" id="fondo" onchange="cambiarFondo(this)">
+			<option value="#1b1b1b">orginal</option>
+			<option value="white">blanco</option>
+			<option value="black">negro</option>
+			<option value="pink">rosa</option>
+		</select>
+	</div>
+
 	<div class="container">
 		<header>
 			<!-- inicio menu -->
@@ -47,7 +58,7 @@
 					<img class="img-fluid" src="img/somos.png" alt="Imagen produccion floral">
 				</div>
 				<div class="col-sm-12 col-md-5 align-self-center">
-					<p class="parrafosomos">
+					<p id="parrafo" class="parrafosomos">
 						Somos una marca joven, apasionada y curiosa.
 
 						Somos los que vamos a estar junto a vos en cada etapa de tu vida. 
@@ -58,6 +69,7 @@
 
 						Bienvenidos a nuestra comunidad, bienvenidos a Eterea!
 					</p>
+					
 					<div class="botonsomos">
 						<a class="btn" href="https://www.instagram.com/ETEREABYCHINO" role="button"> + Eterea </a>
 					</div>
@@ -75,8 +87,6 @@
 			</div>
 		</div>
 	</footer>
-		
-
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
