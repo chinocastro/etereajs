@@ -1,5 +1,5 @@
 /* Bienvenida index*/
-
+/*
 function sumar() {
 	var nombre
 	var edad  
@@ -23,6 +23,7 @@ function sumar() {
 	}
 
 }
+*/
 
 /* arrays prodctos */
 function Producto(n, p, i,) {
@@ -71,6 +72,9 @@ for (var i =0; i <  inputs.length; i++) {
 	});
 }
 */
+
+
+
 /*cambio de color en "somos" */
 
 function cambiarFondo (x) {
@@ -79,3 +83,46 @@ function cambiarFondo (x) {
 	var body =document.getElementById("body");
 	body.style.backgroundColor = x.value;
 }
+
+
+
+/* FORMULARIO */
+
+(function(){
+
+		var formulario = document.getElementsByName("formulario")[0],
+			elementos = formulario.elements,
+			boton = document.getElementById("btn");
+
+		var validarNombre = function(e){
+			if (formulario.nombre.value == 0) {
+				alert("Oops tu nombre");
+				e.preventDefault();
+			}
+		};
+
+		var validarTexto = function (e) {
+			if (formulario.texto.value == 0) {
+				alert("Olvidaste lo que nos queres decir");
+				e.preventDefault();
+			}
+		}
+
+		var validarEmail = function (e) {
+			if (formulario.mail.value == 0) {
+				alert("Falto tu Mail");
+				e.preventDefault();
+			}
+		};
+
+		var validar = function(e){
+			validarNombre(e);
+			validarEmail(e);
+			validarTexto(e);
+		};
+
+		formulario.addEventListener("submit", validar);
+
+	}());
+	
+
