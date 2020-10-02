@@ -126,3 +126,5 @@ function cambiarFondo (x) {
 	}());
 	
 
+/* entrega 2 */
+

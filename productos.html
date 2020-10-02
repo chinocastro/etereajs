@@ -8,12 +8,25 @@
 	<meta name= "author" content="Federico Castro">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minium-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<script type="text/javascript" language="javascript" src="js/js.js"></script>
+	
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+	  <script
+      src="https://kit.fontawesome.com/187c7953cf.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
 	<div class="container">
+		<div class="container">
+      <div class="row">
+        <div class="col text-right">
+          <label class="text-right"
+            ><i class="fas fa-shopping-cart"></i>
+            <span class="contador badge badge-light"></span
+          ></label>
+        </div>
+      </div>
 		<header>
 			<!-- inicio menu -->
 			<nav class="navbar navbar-expand-lg" id="menu">
@@ -35,7 +48,7 @@
 		</header>
 	</div>
 
-	<main class="container">
+	<main class="container" id="lista-productos">
 		<div class="row">
 			<div class="col-md-12">
 				<h1 class="text-center"> #PRODUCTOS </h1>
@@ -48,6 +61,9 @@
 						<img src="img/gorra1.jpg" alt="Gorra Efimera">
 						<h2>Efimera</h2>
 						<p>poco tiempo para este mundo</p>
+						 <button class="btn btn-primary" onclick="articuloUno()">
+              					  Agregar al carrito
+             			 </button>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6">
@@ -55,6 +71,9 @@
 						<img src="img/gorra2.jpg" alt="Gorra Aurora">
 						<h2>Aurora</h2>
 						<p>luz tenue para este mundo</p>
+						 <button onclick="carrito2()" class="btn btn-primary">
+                Agregar al carrito
+              </button>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6">
@@ -62,6 +81,7 @@
 						<img src="img/gorra3.jpg" alt="Gorra Epifania">
 						<h2>Epifania</h2>
 						<p>revelacion para este mundo</p>
+						<a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9">Comprar</a>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6">
@@ -69,6 +89,7 @@
 						<img src="img/gorra4.jpg" alt="Gorra Etereo">
 						<h2>Etereo</h2>
 						<p>delicada para este mundo</p>
+						<a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9">Comprar</a>
 					</div>
 				</div>
 			</div>
@@ -107,6 +128,14 @@
 		</section>
 	</main>
 
+	 <div class="col">
+          <div class="listados">
+            <!-- ACA VA EL LISTADO -->
+          </div>
+          <div class="total">
+            <!-- ACA VA SUMARIZANDO EL TOTAL -->
+          </div>
+        </div>
 	<hr>
 
 	<footer class="container text-right">
@@ -117,6 +146,8 @@
 		</div>
 	</footer>
 
+
+	<script type="text/javascript" language="javascript" src="js/pedido.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
