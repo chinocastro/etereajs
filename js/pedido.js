@@ -1,9 +1,12 @@
+
+
 const productos = [
   {
     gorraEfimera: { nombre: "Gorra Efimera", precio: 450 },
     gorraAurora: { nombre: "Gorra Aurora", precio: 500 },
   },
 ];
+
 
 const gorras = [];
 const precios = [];
@@ -45,3 +48,8 @@ const sumaTotal = () => {
   localStorage.setItem("gorras", JSON.stringify(gorras));
   localStorage.setItem("precios", JSON.stringify(precios));
 };
+
+
+$(".btn-primary").click( function(){
+  alert("agregaste el producto al carrito");
+});
