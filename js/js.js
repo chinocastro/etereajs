@@ -87,7 +87,7 @@ function cambiarFondo (x) {
 
 
 /* FORMULARIO */
-
+/*
 (function(){
 
 		var formulario = document.getElementsByName("formulario")[0],
@@ -126,5 +126,25 @@ function cambiarFondo (x) {
 	}());
 	
 
-/* entrega 2 */
+/* entrega ajax */
+
+
+$("#btn").click (function () {
+
+	var Nombre=document.getElementById("nombre").value;
+	var Mail=document.getElementById("mail").value;
+	var Texto=document.getElementById("texto").value;
+
+	var ruta="Nom="+Nombre+"&Mai="+Mail+"&Tex="+Texto;
+
+	$.ajax({
+		url: "back.php",
+		type: "POST",
+		data: ruta,
+	})
+	.done(function(res) {
+		$("#respuesta").html(res)
+	})
+});
+
 
