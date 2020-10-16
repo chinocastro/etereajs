@@ -35,26 +35,27 @@
 			<nav class="navbar navbar-expand-lg" id="menu">
 				<!--logo-->
 				<a class="navbar-brand" href="index.html">Eterea by Chino</a>
+				<!-- Carrito drop-->
 				 <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item dropdown">
                                 <img src="img/carrito.png" class="nav-link dropdown-toggle img-fluid" height="70px"
                                     width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false"></img>
-                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse" style="background-color: black;">
                                     <table id="lista-carrito" class="table">
                                         <thead>
                                             <tr>
-                                                <th>Imagen</th>
-                                                <th>Nombre</th>
-                                                <th>Precio</th>
-                                                <th></th>
+                                                <th style="color: white; text-transform: uppercase;">Imagen</th>
+                                                <th style="color: white; text-transform: uppercase;">Nombre</th>
+                                                <th style="color: white; text-transform: uppercase;">Precio</th>
+                                                <th style="color: white; text-transform: uppercase;"></th>
                                             </tr>
                                         </thead>
                                         <tbody></tbody>
                                     </table>
 
-                                    <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                    <a href="#" id="vaciar-carrito" class="btn btn-dark btn-block">Vaciar Carrito</a>
                                     <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
                                         Compra</a>
                                 </div>
@@ -92,7 +93,7 @@
 						<h2>Efimera</h2>
 						<p>poco tiempo para este mundo</p>
 						<p class="precio">$450</p>
-						 <button id="boton" class="btn btn-primary agregar-carrito" data-id="1">
+						 <button id="boton" class="btn btn-dark agregar-carrito" data-id="1">
               					  Agregar al carrito
              			 </button>
 					</div>
@@ -103,7 +104,7 @@
 						<h2>Aurora</h2>
 						<p>luz tenue para este mundo</p>
 						<p class="precio">$450</p>
-						 <button id="boton" class="btn btn-primary agregar-carrito" data-id="2">
+						 <button id="boton" class="btn btn-dark agregar-carrito" data-id="2">
               					  Agregar al carrito
              			 </button>
 					</div>
@@ -114,7 +115,7 @@
 						<h2>Epifania</h2>
 						<p>revelacion para este mundo</p>
 						<p class="precio">$450</p>
-						 <button id="boton" class="btn btn-primary agregar-carrito" data-id="3">
+						 <button id="boton" class="btn btn-dark agregar-carrito" data-id="3">
               					  Agregar al carrito
              			 </button>
 					</div>
@@ -125,7 +126,7 @@
 						<h2>Etereo</h2>
 						<p>delicada para este mundo</p>
 						<p class="precio">$450</p>
-						 <button id="boton" class="btn btn-primary agregar-carrito" data-id="4">
+						 <button id="boton" class="btn btn-dark agregar-carrito" data-id="4">
               					  Agregar al carrito
              			 </button>
 					</div>
@@ -137,7 +138,7 @@
 						<h2>Petricor</h2>
 						<p>el olor a lluvia de este mundo</p>
 						<p class="precio">$450</p>
-						 <button id="boton" class="btn btn-primary agregar-carrito" data-id="5">
+						 <button id="boton" class="btn btn-dark agregar-carrito" data-id="5">
               					  Agregar al carrito
              			 </button>
 					</div>
@@ -148,7 +149,7 @@
 						<h2>Monda</h2>
 						<p>libre de cosas de este mundo</p>
 						<p class="precio">$450</p>
-						 <button id="boton" class="btn btn-primary agregar-carrito" data-id="6">
+						 <button id="boton" class="btn btn-dark agregar-carrito" data-id="6">
               					  Agregar al carrito
              			 </button>
 					</div>
@@ -159,7 +160,7 @@
 						<h2>Acedrada</h2>
 						<p>lo puro de este mundo</p>
 						<p class="precio">$450</p>
-						 <button id="boton" class="btn btn-primary agregar-carrito" data-id="7">
+						 <button id="boton" class="btn btn-dark agregar-carrito" data-id="7">
               					  Agregar al carrito
              			 </button>
 					</div>
@@ -170,7 +171,7 @@
 						<h2>Camino</h2>
 						<p>la ruta de este mundo</p>
 						<p class="precio">$450</p>
-						 <button id="boton" class="btn btn-primary agregar-carrito" data-id="8">
+						 <button id="boton" class="btn btn-dark agregar-carrito" data-id="8">
               					  Agregar al carrito
              			 </button>
 					</div>
@@ -180,16 +181,6 @@
 
 		</section>
 	</main>
-
-	 <div class="col">
-          <div class="listados">
-            <!-- ACA VA EL LISTADO -->
-          </div>
-          <div class="total">
-            <!-- ACA VA SUMARIZANDO EL TOTAL -->
-          </div>
-        </div>
-	<hr>
 
 	<footer class="container text-right">
 		<div class="row">
@@ -201,7 +192,9 @@
 
 
 	
-	
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	<script src="sweetalert2.all.min.js"></script>
+
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

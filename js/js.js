@@ -26,16 +26,6 @@ function sumar() {
 */
 
 /* arrays prodctos */
-function Producto(n, p, i,) {
-	    this.nombre = n;
-	    this.precio = p;
-	    this.imagen = i;
-		}
-
-gorraEfimera = new Producto('gorraEfimera', 450, "img/gorra1.jpg")
-gorraAurora = new Producto('gorraAurora', 450, "img/gorra2.jpg")
-gorraEpifania = new Producto('gorraEpifania', 500, "img/gorra3.jpg")
-gorraEtereo = new Producto('gorraEtereo', 350, "img/gorra4.jpg")
 
 /*
 var elementos = document.getElementsByTagName ("");
@@ -128,23 +118,5 @@ function cambiarFondo (x) {
 
 /* entrega ajax */
 
-
-$("#btn").click (function () {
-
-	var Nombre=document.getElementById("nombre").value;
-	var Mail=document.getElementById("mail").value;
-	var Texto=document.getElementById("texto").value;
-
-	var ruta="Nom="+Nombre+"&Mai="+Mail+"&Tex="+Texto;
-
-	$.ajax({
-		url: "back.php",
-		type: "POST",
-		data: ruta,
-	})
-	.done(function(res) {
-		$("#respuesta").html(res)
-	})
-});
 
 
