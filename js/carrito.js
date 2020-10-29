@@ -50,7 +50,7 @@ class Carrito {
             <td style="font-weight: bold";>
                 <img src="${producto.imagen}" width=100>
             </td>
-            <td style="color:white; font-weight:bold;">${producto.titulo}</td>
+            <td  style="color:white; font-weight:bold;">${producto.titulo}</td>
             <td style="color:white; font-weight:bold;">${producto.precio}</td>
             <td style="color:white; font-weight:bold;">
                 <a href="#" class="borrar-producto fas fa-times-circle" data-id="${producto.id}"></a>
@@ -139,18 +139,20 @@ class Carrito {
         productosLS.forEach(function (producto){
             const row = document.createElement('tr');
             row.innerHTML = `
-                <td >
+                <tbody style=" ">
+                <td style="width:auto;">
                     <img src="${producto.imagen}" width=100>
                 </td>
-                <td style="color:white; font-weight:bold;">${producto.titulo}</td>
-                <td style="color:white; font-weight:bold;">${producto.precio}</td>
-                <td style="color:white; font-weight:bold;">
+                <td style="color:white; font-weight:bold; width:auto; ">${producto.titulo}</td>
+                <td style="color:white; font-weight:bold; width:auto;">${producto.precio}</td>
+                <td style="color:white; font-weight:bold; width:auto;">
                     <input type="number" class="form-control cantidad" min="1" value=${producto.cantidad}>
                 </td>
-                <td id='subtotales' style="color:white; font-weight:bold;">${producto.precio * producto.cantidad}</td>
-                <td style="color:white; font-weight:bold;">
+                <td id='subtotales' style="color:white; overflow-x:auto; font-weight:bold;">${producto.precio * producto.cantidad}</td>
+                <td style="color:white; font-weight:bold; width:5px;">
                     <a href="#" class="borrar-producto fas fa-times-circle" style="font-size:30px" data-id="${producto.id}"></a>
                 </td>
+                </tbody>
             `;
             listaCompra.appendChild(row);
         });

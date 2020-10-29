@@ -229,9 +229,86 @@ footer div a {
     font-size: 7px; }
     .sideways img {
       width: 10px;
-      height: 10px; } }
+      height: 10px; } 
+.table td, .table th{
+      font-size: 13px;
+      padding: 2px !important;
+      width: 50% !important;
+      letter-spacing: 1px;
+    }
+  .table td img{
+    width: 60%;
+    }
+  
+  .table th input{
+    font-size: 14px;
+    width: 80% !important;
+  }
+  .table td input{
+    font-size: 14px;
+    width: 80%;
+  }
+  #subtotal{
+    font-size: 14px;
+  }
+  #igv{
+    font-size: 14px;
+  }
+   
+   .card-dark{
+    display: block;
+    margin-left:45px !important;
+    background-color: red;
+   
+  }
+  .card-body img{
+    width: 70% !important;
+  }
+  }
+
 
 @media (min-width: 415px) and (max-width: 736px) {
   #bienvenidos .boton a {
     padding: 0;
-    font-size: 12px; } }
+    font-size: 12px;
+     }
+
+    .table td, .table th{
+      padding: 0px !important;
+      width: 50% !important;
+      letter-spacing: 1px;
+
+    }
+    .table td, .table th{
+      font-size: 13px;
+      padding: 2px !important;
+      width: 10% !important;
+      letter-spacing: 1px;
+    }
+  .table td img{
+    width: 50%;
+    padding: px;
+    }
+  
+  .table th input{
+    font-size: 14px;
+    width: 80% !important;
+  }
+  .table td input{
+    font-size: 14px;
+    width: 80%;
+  }
+  #subtotal{
+    font-size: 14px;
+  }
+  #igv{
+    font-size: 14px;
+  }
+  .card-dark{
+    width: 50% !important;
+    margin-left:100px !important;
+  }
+  .card-body img{
+    width: 70% !important;
+  }
+  }
