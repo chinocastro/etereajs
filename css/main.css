@@ -17,6 +17,13 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
+.table td input{
+    font-size: 18px;
+    font-weight: bold;
+    width: 40px;
+    text-align: center;
+  }
+
 .selector{
   display: flex;
   padding: 30px;
@@ -242,11 +249,12 @@ footer div a {
   
   .table th input{
     font-size: 14px;
-    width: 100% !important;
+    width: auto;
   }
   .table td input{
     font-size: 14px;
-    width: 80%;
+    width: 50%;
+    text-align: center;
   }
   #subtotal{
     font-size: 14px;
@@ -292,11 +300,12 @@ footer div a {
   
   .table th input{
     font-size: 14px;
-    width: 80% !important;
+    width: 90% !important;
   }
   .table td input{
     font-size: 14px;
-    width: 80%;
+    width: 50%;
+    text-align: center;
   }
   #subtotal{
     font-size: 14px;

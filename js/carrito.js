@@ -6,7 +6,7 @@ class Carrito {
         //Delegado para agregar al carrito
         if(e.target.classList.contains('agregar-carrito')){
             const producto = e.target.parentElement.parentElement;
-            //Enviamos el producto seleccionado para tomar sus datos
+            //Envia el producto
             this.leerDatosProducto(producto);
         }
     }
@@ -43,7 +43,7 @@ class Carrito {
         
     }
 
-    //muestra producto seleccionado en carrito
+    //muestra productos seleccionados
     insertarCarrito(producto){
         const row = document.createElement('tr');
         row.innerHTML = `
@@ -146,7 +146,7 @@ class Carrito {
                 <td style="color:white; font-weight:bold; width:auto; ">${producto.titulo}</td>
                 <td style="color:white; font-weight:bold; width:auto;">${producto.precio}</td>
                 <td style="color:white; font-weight:bold; width:auto;">
-                    <input type="number" class="form-control cantidad" min="1" value=${producto.cantidad}>
+                    <input min="1" value=${producto.cantidad}>
                 </td>
                 <td id='subtotales' style="color:white; overflow-x:auto; font-weight:bold;">${producto.precio * producto.cantidad}</td>
                 <td style="color:white; font-weight:bold; width:5px;">
@@ -161,7 +161,7 @@ class Carrito {
     //Eliminar producto por ID del LS
     eliminarProductoLocalStorage(productoID){
         let productosLS;
-        //Obtenemos el arreglo de productos
+        //Obtengo el arreglo de productos
         productosLS = this.obtenerProductosLocalStorage();
         //Comparar el id del producto borrado con LS
         productosLS.forEach(function(productoLS, index){
