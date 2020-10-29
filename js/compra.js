@@ -60,15 +60,11 @@ function procesarCompra() {
                  setTimeout(() => {
                         compra.vaciarLocalStorage();
                         enviado.remove();
+                        timer: 3000;
                         Swal.fire('Gracias por tu compra');
                         window.location = "product.html";
                     }, 2000);
-
-            })
-    
-
-                   
-
+            })          
     }
 }
 
